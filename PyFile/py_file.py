@@ -1,26 +1,7 @@
-from genericpath import isdir
+﻿from genericpath import isdir
 from os import getcwd,listdir,system
 from sched import Event
 from time import sleep
-
-class Usuario:
-
-    def getInputUser(self,message="Ingrese el path de donde estan los archivos:\n"):
-        inputUser = input(message)
-        return inputUser
-
-    def verifyOption(self,option):
-        try:
-            valueInt = int(option)
-            return valueInt
-        except ValueError:
-            system("cls")
-            
-    def messageHelps(self):
-        system("cls")
-        print("Elija una opción")
-        print("1- El programa organizara los archivos en la carpeta donde se esta ejecutando\n2- Se le pedira una ruta para que organizara los archivos qu esten en esa ruta\n0-Salir el programa")
-
 
 #This class it's manager all relationship with extensions and names files
 class Files:
